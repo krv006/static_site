@@ -27,7 +27,7 @@ def service (request , customer_id):
 def team (request , teammember_id):
     team = TeamMember.objects.filter( id = teammember_id)
     context = {
-        'context' : context
+        'team' : team
     }
     return render(request , 'team.html' , context )
 
