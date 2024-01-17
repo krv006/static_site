@@ -15,12 +15,12 @@ class TeamMember(models.Model):
 
 
 class Social_medias(models.Model):
-    facebook = models.CharField(null = True)
-    twitter = models.CharField(null = True)
-    linkedin = models.CharField(null = True)
-    instagram = models.CharField(null = True)
-    youtube = models.CharField(null = True)
-    telegram = models.CharField(null = True)
+    facebook = models.CharField(max_length = 100 , null = True)
+    twitter = models.CharField(max_length = 100 , null = True)
+    linkedin = models.CharField(max_length = 100 , null = True)
+    instagram = models.CharField(max_length = 100 , null = True)
+    youtube = models.CharField(max_length = 100 , null = True)
+    telegram = models.CharField(max_length = 100 , null = True)
     teammember = models.ForeignKey(TeamMember, on_delete=models.CASCADE)
     
 
