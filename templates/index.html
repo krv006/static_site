@@ -94,18 +94,30 @@
     <section class="slider_section ">
       <div id="customCarousel1" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+          {% for i in banner %}
           <div class="carousel-item active">
             <div class="container ">
               <div class="row">
                 <div class="col-md-6 ">
                   <div class="detail-box">
                     <h1>
-                      Crypto <br>
-                      Currency
+                      {{i.title}}
                     </h1>
-                    <p>
-                      Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
-                    </p>
+                      {{i.info}}
                     <div class="btn-box">
                       <a href="" class="btn1">
                         Read More
@@ -115,66 +127,29 @@
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img  src="{% static "images/slider-img.png" %} " alt="">
+                    <img  src="{{i.image.url}} " alt="">
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item ">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-6 ">
-                  <div class="detail-box">
-                    <h1>
-                      Crypto <br>
-                      Currency
-                    </h1>
-                    <p>
-                      Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
-                    </p>
-                    <div class="btn-box">
-                      <a href="" class="btn1">
-                        Read More
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="img-box">
-                    <img  src="{% static "images/slider-img.png" %} " alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="container ">
-              <div class="row">
-                <div class="col-md-6 ">
-                  <div class="detail-box">
-                    <h1>
-                      Crypto <br>
-                      Currency
-                    </h1>
-                    <p>
-                      Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? Esse dicta aliquid error repudiandae earum suscipit fugiat molestias, veniam, vel architecto veritatis delectus repellat modi impedit sequi.
-                    </p>
-                    <div class="btn-box">
-                      <a href="" class="btn1">
-                        Read More
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="img-box">
-                    <img  src="{% static "images/slider-img.png" %} " alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          {% endfor %}
+          
+
+          
+          {% for i in service %}
+
+          {% endfor %}
+
+
+
+
+
+
+
+          
+
+
         </div>
         <ol class="carousel-indicators">
           <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
@@ -194,10 +169,10 @@
       <div class="container ">
         <div class="heading_container heading_center">
           <h2>
-            Our <span>Services</span>
+            My gruop <span>Services</span>
           </h2>
           <p>
-            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+              PDP ACADEMY JUDA XAM KOTTA IT SERVICE lardan biri
           </p>
         </div>
         <div class="row">
@@ -241,6 +216,11 @@
               </div>
             </div>
           </div>
+
+
+
+
+
           <div class="col-md-4 ">
             <div class="box ">
               <div class="img-box">
@@ -444,7 +424,16 @@
               </div>
               <div class="detail-box">
                 <h5>
+
+
+
+
                   Nancy White
+                
+                
+                
+                
+                
                 </h5>
                 <p>
                   Marketing Head
@@ -476,7 +465,20 @@
               </div>
               <div class="detail-box">
                 <h5>
+                 
+                 
+                 
+                 
+                 
                   Earl Martinez
+                
+                
+                
+                
+                
+                
+                
+                
                 </h5>
                 <p>
                   Marketing Head
@@ -508,7 +510,21 @@
               </div>
               <div class="detail-box">
                 <h5>
+
+
+
+
+
+
+
                   Josephine Allard
+               
+               
+               
+               
+               
+               
+               
                 </h5>
                 <p>
                   Marketing Head
@@ -560,7 +576,15 @@
                 <div class="client_id">
                   <div class="client_info">
                     <h6>
+
+
+
+
                       LusDen
+                    
+                      
+                    
+                      
                     </h6>
                     <p>
                       magna aliqua. Ut

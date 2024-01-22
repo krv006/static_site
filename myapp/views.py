@@ -3,8 +3,14 @@ from .models import Customer , Service , Banner , Social_medias , TeamMember
 # Create your views here.
 def index (request):
     banner = Banner.objects.all()
+    social_media = Social_medias.objects.all()
+    team = TeamMember.objects.all()
+    customer = Customer.objects.all()
     context = {
         'banner' : banner,
+        'social_media' : social_media,
+        'team' : team,
+        'customer' : customer,
     }
     return render(request , 'index.html' , context )
 
@@ -37,3 +43,6 @@ def why (request):
         'customer' : customer
     }
     return render(request , 'why.html' , context )
+
+
+

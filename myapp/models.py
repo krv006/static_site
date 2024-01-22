@@ -14,6 +14,8 @@ class TeamMember(models.Model):
         return self.full_name
 
 
+
+
 class Social_medias(models.Model):
     facebook = models.CharField(max_length = 100 , null = True)
     twitter = models.CharField(max_length = 100 , null = True)
@@ -22,6 +24,8 @@ class Social_medias(models.Model):
     youtube = models.CharField(max_length = 100 , null = True)
     telegram = models.CharField(max_length = 100 , null = True)
     teammember = models.ForeignKey(TeamMember, on_delete=models.CASCADE)
+    
+    
     
 
 class Banner(models.Model):
@@ -34,6 +38,8 @@ class Banner(models.Model):
     def __str__(self):
         return self.title
     
+
+
 
 class Service(models.Model): 
     title = models.CharField(max_length = 255 )
