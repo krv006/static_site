@@ -14,7 +14,7 @@
   <meta name="author" content="" />
   <link rel="shortc% ut ico n" href="{% static "images/favicon.png" %} " type="">
 
-  <title> Finexo </title>
+  <title> P22 </title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="{% static "css/bootstrap.css" %}" />
@@ -92,23 +92,10 @@
     <!-- end header section -->
     <!-- slider section -->
     <section class="slider_section ">
-      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+
+      <div id="banner_id" class="carousel slide" data-ride="carousel">
+        {% for i in banner %}
         <div class="carousel-inner">
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-          {% for i in banner %}
           <div class="carousel-item active">
             <div class="container ">
               <div class="row">
@@ -119,9 +106,9 @@
                     </h1>
                       {{i.info}}
                     <div class="btn-box">
-                      <a href="" class="btn1">
+                      {% comment %} <a href="" class="btn1">
                         Read More
-                      </a>
+                      </a> {% endcomment %}
                     </div>
                   </div>
                 </div>
@@ -133,28 +120,15 @@
               </div>
             </div>
           </div>
-          {% endfor %}
-          
-
-          
-          {% for i in service %}
-
-          {% endfor %}
-
-
-
-
-
-
-
-          
-
-
         </div>
+        {% endfor %}
+
+
+
         <ol class="carousel-indicators">
-          <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
-          <li data-target="#customCarousel1" data-slide-to="1"></li>
-          <li data-target="#customCarousel1" data-slide-to="2"></li>
+          <li data-target="banner_id" data-slide-to="0" class="active"></li>
+          <li data-target="banner_id" data-slide-to="1"></li>
+          <li data-target="banner_id" data-slide-to="2"></li>
         </ol>
       </div>
 
