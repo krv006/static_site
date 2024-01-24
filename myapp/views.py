@@ -6,11 +6,13 @@ def index (request):
     social_media = Social_medias.objects.all()
     team = TeamMember.objects.all()
     customer = Customer.objects.all()
+    service =  Service.objects.all()
     context = {
         'banner' : banner,
         'social_media' : social_media,
         'team' : team,
         'customer' : customer,
+        'service' : service
     }
     return render(request , 'index.html' , context )
 
